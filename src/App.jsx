@@ -6,7 +6,7 @@ import AdminDashboardPage from './modules/admin/AdminDashboardPage';
 import CustomerDashboardPage from './modules/customer/CustomerDashboardPage';
 import ProviderDashboardPage from './modules/provider/ProviderDashboardPage';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://multiservice-backend-xkck.onrender.com/api';
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('multiservice_token') || '');
