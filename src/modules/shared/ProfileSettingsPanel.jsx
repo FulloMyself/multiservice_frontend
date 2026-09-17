@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 export default function ProfileSettingsPanel({ user, token, onProfileUpdated }) {
   const [form, setForm] = useState({

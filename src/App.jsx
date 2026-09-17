@@ -6,7 +6,7 @@ import AdminDashboardPage from './modules/admin/AdminDashboardPage';
 import CustomerDashboardPage from './modules/customer/CustomerDashboardPage';
 import ProviderDashboardPage from './modules/provider/ProviderDashboardPage';
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('multiservice_token') || '');
